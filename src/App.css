@@ -1,2 +1,71 @@
 .App {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border-color: silver;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1.5px solid silver;
+}
+
+.nav-logo {
+  display: inline-block;
+  width: 180px;
+  height: 28px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.about-sum-container {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3em;
+}
+
+.about-sum-text {
+  text-align: left;
+  max-width: 30%;
+}
+
+.about-sum-container img {
+  max-width: 25%;
+  max-height: 25%;
+}
+.login-sum-container {
+  height: 475px;
+  overflow: hidden;
+}
+
+.login-sum-image {
+  width: 100%;
+}
+
+.footer-details {
+  text-align: right;
+  color: silver;
+}
+
+.footer-details a {
+  color: silver;
+  text-decoration: underline;
+}
