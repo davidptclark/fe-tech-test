@@ -8,14 +8,14 @@ export default function NavBar() {
       <Link to="/" className="nav-logo">
         <img className="nav-logo" src={logo} alt="Company logo" />
       </Link>
-      <ul class="nav-links">
-        <li class="nav-items">
+      <ul className="nav-links">
+        <li className="nav-items">
           <Link to="/">Home</Link>
         </li>
-        <li class="nav-items">
+        <li className="nav-items">
           <Link to="/about-us">About Us</Link>
         </li>
-        <li class="nav-items">
+        <li className="nav-items">
           <Link to="/contact-us">Contact Us</Link>
         </li>
         <button>Login</button>

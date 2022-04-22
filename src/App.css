@@ -69,3 +69,18 @@ hr {
   color: silver;
   text-decoration: underline;
 }
+
+.carousel-image-container {
+  height: 475px;
+  overflow: hidden;
+}
+
+.carousel-title,
+.carousel-text {
+  position: absolute;
+}
+
+.carousel-image {
+  width: 100%;
+  overflow: hidden;
+}
