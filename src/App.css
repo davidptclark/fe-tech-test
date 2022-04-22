@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -60,6 +61,11 @@ hr {
   width: 100%;
 }
 
+.login-text-container {
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
 .footer-details {
   text-align: right;
   color: silver;
@@ -73,11 +79,17 @@ hr {
 .carousel-image-container {
   height: 475px;
   overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
-.carousel-title,
-.carousel-text {
+.carousel-text-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
   position: absolute;
+  max-width: 300px;
 }
 
 .carousel-image {

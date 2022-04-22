@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -24,20 +25,22 @@ export default function Carousel() {
       {carouselData.map((item, index) => {
         return (
           <SwiperSlide key={`carousel-slide-${index}`}>
-            <div>
+            <div className="carousel-text-container">
               <h3 className="carousel-title">{item.Title}</h3>
-              <p className="carousel-text">{item.Subtitle}</p>
-              <img
-                key={`carousel-image-${index}`}
-                className="carousel-image"
-                src={item.ImageUrl}
-                alt="Office"
-              />
+              <p className="carousel-subtitle">{item.Subtitle}</p>
+              <Link to="/contact-us">
+                <button>Contact Us</button>
+              </Link>
             </div>
+            <img
+              key={`carousel-image-${index}`}
+              className="carousel-image"
+              src={item.ImageUrl}
+              alt="Office"
+            />
           </SwiperSlide>
         );
       })}
-      ...
     </Swiper>
   );
 }
