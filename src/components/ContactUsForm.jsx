@@ -73,7 +73,10 @@ export default function ContactUsForm() {
         ) : (
           <></>
         )}
-        <button onClick={() => setAddNumberField(!addNumberField)}>
+        <button
+          type="button"
+          onClick={() => setAddNumberField(!addNumberField)}
+        >
           {addNumberField ? "Remove phone number" : "Add new phone number"}
         </button>
         <br></br>
