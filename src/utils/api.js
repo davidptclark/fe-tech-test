@@ -9,3 +9,7 @@ export const getCarouselData = () => {
     .get("/home/banner-details")
     .then(({ data: { Details } }) => Details);
 };
+
+export const postContactData = (data) => {
+  return api.post("/contact-us/submit", data).then(({ status }) => status);
+};
