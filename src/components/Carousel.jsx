@@ -12,15 +12,13 @@ export default function Carousel() {
   useEffect(() => {
     api.getCarouselData().then((data) => setCarouselData(data));
   }, []);
-  console.log(carouselData);
+
   return (
     <Swiper
       className="carousel-image-container"
       modules={[Navigation]}
       spaceBetween={10}
       navigation
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       {carouselData.map((item, index) => {
         return (

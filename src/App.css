@@ -62,8 +62,13 @@ hr {
 }
 
 .login-text-container {
+  color: white;
   position: absolute;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  max-width: 450px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
 }
 
 .footer-details {
@@ -77,13 +82,13 @@ hr {
 }
 
 .carousel-image-container {
+  color: white;
   height: 475px;
   overflow: hidden;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
 .carousel-text-container {
-  color: white;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -95,4 +100,24 @@ hr {
 .carousel-image {
   width: 100%;
   overflow: hidden;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+button {
+  background: #2a9fd8;
+  color: #fff;
+  border: 0;
+  padding: 15px;
+  border-radius: 2px;
+  cursor: pointer;
 }
