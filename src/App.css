@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: "Raleway", sans-serif;
+  line-height: 1.5;
 }
 
 a {
@@ -8,7 +9,39 @@ a {
 }
 
 hr {
-  border-color: silver;
+  background-color: silver;
+  height: 1px;
+  border: 0;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+label {
+  padding-bottom: 5px;
+}
+
+input {
+  background-color: #f8f9fc;
+  width: 100%;
+  height: 40px;
+  padding: 6px 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+}
+
+textarea {
+  background-color: #f8f9fc;
+  width: 100%;
+  height: 100px;
+  padding: 6px 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
 }
 
 .nav-container {
@@ -17,6 +50,8 @@ hr {
   justify-content: space-around;
   align-items: center;
   border-bottom: 1.5px solid silver;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .nav-logo {
@@ -31,8 +66,16 @@ hr {
 }
 
 .nav-items {
-  display: inline-block;
-  padding: 10px 15px;
+  display: block;
+  padding: 5px 25px;
+  font-weight: bold;
+}
+
+.nav-button {
+  border: none;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .about-sum-container {
@@ -55,6 +98,7 @@ hr {
 .login-sum-container {
   height: 475px;
   overflow: hidden;
+  position: relative;
 }
 
 .login-sum-image {
@@ -67,13 +111,45 @@ hr {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   max-width: 450px;
   padding: 20px;
+  margin-left: 200px;
   border-radius: 5px;
   text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.login-button {
+  background-color: #eef7ff;
+  color: #307bb9;
+  font-weight: bold;
+  border: 0;
+  padding: 15px 40px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.about-us-text {
+  column-count: 3;
+  padding-bottom: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.about-us-text p {
+  margin-top: 0px;
+  text-align: left;
+}
+
+.about-us-text p:first-child,
+.about-us-page-text p:first-child {
+  font-weight: bold;
 }
 
 .footer-details {
   text-align: right;
   color: silver;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 0.8em;
 }
 
 .footer-details a {
@@ -81,11 +157,17 @@ hr {
   text-decoration: underline;
 }
 
+.carousel-loading-prompt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .carousel-image-container {
   color: white;
   height: 475px;
   overflow: hidden;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
 
 .carousel-text-container {
@@ -95,6 +177,13 @@ hr {
   justify-content: space-between;
   position: absolute;
   max-width: 300px;
+  margin-left: 200px;
+  max-width: 450px;
+  padding: 20px;
+  margin-left: 200px;
+  border-radius: 5px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .carousel-image {
@@ -102,22 +191,296 @@ hr {
   overflow: hidden;
 }
 
-input,
-textarea,
-select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
+.success-prompt-container {
+  background-color: #e8f5da;
+  padding: 20px;
+  margin-left: 20px;
 }
 
-button {
-  background: #2a9fd8;
-  color: #fff;
+.valid-image-circle {
+  margin: auto;
+  background-color: #8ec73d;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.valid-image {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.about-us-page {
+  text-align: left;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.about-us-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+}
+
+.about-us-list {
+  font-weight: bold;
+}
+
+.contact-us-button,
+.learn-more-button {
+  background-color: #307bb9;
+  color: #eef7ff;
+  font-weight: bold;
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.contact-us-submission-error-container {
+  background-color: rgba(255, 0, 0, 0.2);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-not-found {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-us-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.address-checkbox label,
+.address-checkbox input {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  border-radius: 0px;
+  display: inline;
+}
+
+.contact-us-form-container,
+.contact-us-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 375px;
+  padding-right: 15px;
+}
+
+.contact-us-info label {
+  float: left;
+  margin-left: 1em;
+}
+
+.optional-field,
+.maximum-length {
+  color: gray;
+  font-size: 0.8em;
+}
+
+.contact-us-image {
+  height: 100%;
+  overflow: hidden;
+}
+
+.add-number-button {
+  display: block;
+  width: 100%;
+  background-color: #eef7ff;
+  color: #307bb9;
+  font-weight: bold;
   border: 0;
   padding: 15px;
   border-radius: 2px;
-  cursor: pointer;
+  margin-left: 10px;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #307bb9;
+  color: #eef7ff;
+  width: 100%;
+  font-weight: bold;
+  border: 0;
+  padding: 15px;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+
+.submit-button img {
+  margin-right: auto;
+  width: 1em;
+  height: 1em;
+}
+
+.submit-button span {
+  margin-right: auto;
+}
+
+.swiper-button-next {
+  background-image: url(./Icon_Arrow.svg);
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  border-radius: 10%;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-position: center;
+}
+
+.swiper-button-prev {
+  background-image: url(./Icon_Arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  border-radius: 10%;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-position: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+@media only screen and (max-width: 736px) {
+  /* css property for phone */
+  .App {
+    font-size: 0.8em;
+  }
+
+  .nav-items,
+  .nav-links {
+    display: none;
+  }
+
+  .contact-us-image {
+    display: none;
+  }
+
+  .about-sum-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 3em; */
+  }
+
+  .about-sum-text {
+    text-align: left;
+    max-width: 95%;
+  }
+
+  .about-sum-container img {
+    max-width: 95%;
+    max-height: 95%;
+  }
+
+  .about-us-text {
+    column-count: 1;
+    padding-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  hr {
+    background-color: silver;
+    height: 1px;
+    border: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .footer-details {
+    text-align: right;
+    color: silver;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 0.8em;
+  }
+
+  .contact-us-button {
+    width: 90%;
+  }
+
+  .learn-more-button {
+    width: 100%;
+  }
+
+  .login-sum-image {
+    height: 100%;
+  }
+
+  .login-sum-container {
+    height: 100%;
+  }
+
+  .carousel-image {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .carousel-image-container {
+    color: white;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  }
+
+  .login-text-container {
+    color: white;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    min-width: 300px;
+    max-height: 200px;
+    transform: translate(-50%, -50%);
+  }
+
+  .carousel-text-container {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    min-width: 300px;
+    transform: translate(-50%, -50%);
+  }
+
+  .about-us-page {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contact-us-form-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .login-text-container button {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .about-us-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+  }
 }

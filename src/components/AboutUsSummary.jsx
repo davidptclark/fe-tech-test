@@ -29,7 +29,7 @@ export default function AboutUsSummary() {
           </li>
         </ul>
         <Link to="/about-us">
-          <button>Learn more</button>
+          <button className="learn-more-button">Learn more</button>
         </Link>
       </div>
       <img className="about-sum-image" src={office} alt="Office" />

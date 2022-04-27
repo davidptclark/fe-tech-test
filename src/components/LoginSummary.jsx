@@ -10,12 +10,9 @@ export default function LoginSummary() {
         </h3>
         <p className="login-sum-subtitle">
           Cillum irure minim laborum consectetur Lorem. Aute ipsum mollit in
-          dolore laborum irure in reprehenderit ullamco irure proident. Fugiat
-          tempor do dolor incididunt. Duis consequat et qui minim. Pariatur non
-          officia adipisicing dolore voluptate cupidatat. Quis irure do qui
-          dolore duis veniam pariatur. Velit et veniam pariatur eiusmod enim.
+          dolore laborum irure in reprehenderit ullamco irure proident.
         </p>
-        <button>Log in</button>
+        <button className="login-button">Log in</button>
       </div>
       <img
         className="login-sum-image"

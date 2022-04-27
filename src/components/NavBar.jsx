@@ -8,18 +8,30 @@ export default function NavBar() {
       <Link to="/" className="nav-logo">
         <img className="nav-logo" src={logo} alt="Company logo" />
       </Link>
-      <ul className="nav-links">
-        <li className="nav-items">
-          <Link to="/">Home</Link>
-        </li>
-        <li className="nav-items">
-          <Link to="/about-us">About Us</Link>
-        </li>
-        <li className="nav-items">
-          <Link to="/contact-us">Contact Us</Link>
-        </li>
-        <button>Login</button>
-      </ul>
+      <div className="nav-links">
+        <button className="nav-button">
+          <Link className="nav-items" to="/">
+            Home
+          </Link>
+        </button>
+        <button className="nav-button">
+          <Link className="nav-items" to="/about-us">
+            About Us
+          </Link>
+        </button>
+        <button className="nav-button">
+          <Link
+            to="/contact-us"
+            className="nav-items"
+            onClick={() => {
+              window.location.href = "/contact-us"; //Allows user to refresh form when clicking navbar link
+            }}
+          >
+            Contact Us
+          </Link>
+        </button>
+        <button className="login-button">Log in</button>
+      </div>
     </nav>
   );
 }

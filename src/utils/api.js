@@ -11,5 +11,10 @@ export const getCarouselData = () => {
 };
 
 export const postContactData = (data) => {
-  return api.post("/contact-us/submit", data).then(({ status }) => status);
+  return api
+    .post("/contact-us/submit", data)
+    .then(({ status }) => status)
+    .catch((error) => {
+      return error.response;
+    });
 };
